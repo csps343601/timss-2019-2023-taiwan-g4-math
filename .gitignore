@@ -1,0 +1,14 @@
+# 調查微觀資料與下載檔不可上傳
+*.sav
+*.sps
+*.Rdata
+*.RData
+*.rds
+*.xlsx
+*.xls
+*.zip
+*.7z
+*.rar
+TIMSS2019/
+PIRLS2021/
+SPSS Data/

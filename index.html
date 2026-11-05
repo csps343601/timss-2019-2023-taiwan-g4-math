@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light"><title>TIMSS 2019–2023｜臺灣四年級研究報告</title>
+<style>
+:root{--ink:#15314a;--soft:#435d70;--line:#c5d6df;--paper:#f7fafb;--white:#fff;--blue:#0d7185;--blue2:#d6eef1;--orange:#bb5536;--orange2:#fbe7de}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;line-height:1.78;font-size:16px}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(rgba(21,49,74,.035) 1px,transparent 1px);background-size:100% 32px;z-index:-1}
+a{color:var(--blue);text-underline-offset:3px}a:hover{color:var(--orange)}a:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:2px}
+.mast{background:#102d45;color:#eff7f9;border-bottom:7px solid var(--blue);padding:2.1rem max(2rem,calc((100vw - 1360px)/2)) 2rem;display:flex;justify-content:space-between;gap:1rem;align-items:end}
+.mast strong{font-size:.83rem;letter-spacing:.18em;font-weight:700}.mast small{font-size:.82rem;color:#a9cbd4;text-align:right}
+.layout{max-width:1480px;margin:auto;display:grid;grid-template-columns:240px minmax(0,1fr);gap:4.7vw;padding:0 3.5vw}
+.toc{position:sticky;top:0;align-self:start;height:100vh;overflow:auto;padding:2.2rem 0}.toc .kicker{font-size:.7rem;letter-spacing:.19em;color:var(--orange);font-weight:800;margin-bottom:1rem}.toc a{display:flex;gap:.75rem;align-items:baseline;text-decoration:none;color:var(--soft);padding:.52rem 0;border-bottom:1px solid var(--line);font-size:.85rem;line-height:1.45}.toc a:hover{color:var(--blue)}.toc span{font-family:Consolas,monospace;color:var(--blue);font-size:.7rem}
+.downloads{display:flex;gap:.7rem;flex-wrap:wrap;margin:0 0 2.4rem}.downloads a{display:inline-block;padding:.55rem .85rem;border:1px solid var(--blue);border-radius:4px;text-decoration:none;font-weight:700;font-size:.84rem}.downloads a:hover{background:var(--blue);color:white}main{min-width:0;background:var(--white);box-shadow:0 0 0 1px var(--line);padding:3.6rem clamp(1.4rem,5vw,5.4rem) 6rem;margin:1.8rem 0 5rem}
+h1{font-size:clamp(2rem,4vw,3.6rem);letter-spacing:-.05em;line-height:1.2;margin:0 0 .9rem;font-weight:800;max-width:20ch}h1:before{content:"RESEARCH NOTE / 2026";display:block;color:var(--blue);font-family:Consolas,monospace;font-size:.76rem;letter-spacing:.18em;margin-bottom:1.4rem;font-weight:700}
+.subtitle{font-size:1.15rem;color:var(--soft);margin:0 0 1.6rem;letter-spacing:0;font-weight:600}
+main>p:first-of-type{font-size:.9rem;color:var(--soft);border-top:1px solid var(--line);padding-top:1.1rem}
+h2{font-size:clamp(1.55rem,2.5vw,2.15rem);line-height:1.35;margin:4rem 0 1.25rem;padding:0 0 .8rem;border-bottom:2px solid var(--ink);letter-spacing:-.04em;scroll-margin-top:1.5rem}.section-index{display:inline-block;vertical-align:middle;font:700 .7rem Consolas,monospace;letter-spacing:0;color:var(--blue);background:var(--blue2);padding:.25rem .45rem;margin-right:.85rem}
+h3{font-size:1.15rem;margin:2.1rem 0 .6rem;color:var(--blue);scroll-margin-top:1.5rem}p,li{max-width:76ch}strong{font-weight:750}blockquote{margin:2.2rem 0;padding:1.2rem 1.5rem;border-left:6px solid var(--orange);background:var(--orange2);font-size:1.06rem}blockquote p{margin:0;max-width:none}
+table{border-collapse:collapse;width:100%;margin:1.4rem 0 2rem;font-size:.85rem;line-height:1.5}th,td{padding:.75rem .6rem;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--white);background:var(--ink);font-weight:650;white-space:nowrap}tbody tr:nth-child(even){background:#f0f6f8}tbody tr:hover{background:#e7f3f5}td:first-child{font-weight:650;color:var(--ink)}
+code{font: .86em Consolas,"Courier New",monospace;color:#a84327;background:#f8ede8;padding:.09em .25em;border-radius:2px}ul,ol{padding-left:1.4rem}li{padding-left:.2rem;margin:.45rem 0}hr{border:0;border-top:1px solid var(--line)}
+.footer{border-top:1px solid var(--line);margin-top:4rem;padding-top:1.2rem;color:var(--soft);font-size:.75rem;font-family:Consolas,monospace}
+@media(max-width:900px){.layout{display:block;padding:0}.toc{position:relative;height:auto;padding:1rem 1.2rem;display:flex;overflow:auto;gap:1rem;border-bottom:1px solid var(--line);white-space:nowrap}.toc .kicker{display:none}.toc a{border:0;min-width:max-content}.mast{padding:1.2rem}.mast small{display:none}main{margin:0;box-shadow:none;padding:2rem 1.2rem 4rem}table{display:block;overflow-x:auto;white-space:nowrap}h2{margin-top:3rem}}
+@media print{body{background:#fff;font-size:10pt}body:before,.toc{display:none}.mast{padding:10mm;border-bottom:2mm solid var(--blue)}.layout{display:block;padding:0}main{box-shadow:none;margin:0;padding:10mm 0}h2{break-after:avoid}table{font-size:8pt;break-inside:avoid}a{color:var(--ink);text-decoration:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head><body><header class="mast"><strong>IEA / 臺灣四年級次級資料分析</strong><small>TIMSS 2019 · TIMSS 2023<br>研究報告 / TIMSS 2019–2023</small></header>
+<div class="layout"><nav class="toc" aria-label="報告目錄"><div class="kicker">CONTENT INDEX</div><a href="#section-1"><span>01</span>1. 研究問題與定位</a>
+<a href="#section-2"><span>02</span>2. 實際載入的資料與檔名規則</a>
+<a href="#section-3"><span>03</span>3. 官方統計方法與重現關卡</a>
+<a href="#section-4"><span>04</span>4. 跨檔案連結與分析樣本</a>
+<a href="#section-5"><span>05</span>5. TIMSS 數學領域變化與性別、家庭資源背景</a>
+<a href="#section-6"><span>06</span>6. 校長重視學業成功與數學成就：主要分析</a>
+<a href="#section-7"><span>07</span>7. 學習支持優先方向與研究限制</a>
+<a href="#section-8"><span>08</span>8. 可重現檔案與來源</a></nav><main><div class="downloads" aria-label="下載研究成果">
+<a href="TIMSS2019_2023_校長學業成功重視與數學成就_研究報告.md" download>下載 Markdown 報告</a>
+<a href="TIMSS_2019_2023_期中專題提案_純TIMSS.pptx" download>下載期中簡報</a>
+<a href="official_timss_reproduction_gate.csv" download>下載官方數字核對表</a>
+</div><h1>TIMSS 2019 至 2023 臺灣國小四年級數學領域成就變化與學習支持優先方向</h1>
+<p class="subtitle">性別及家庭學習資源之比較；校長報告的學校重視學業成功程度與數學成就之關聯</p>
+<p>**資料版本與範圍：**TIMSS 2019、TIMSS 2023 臺灣四年級。分析日期：2026-11-04。這是一份次級資料的描述性與關聯性分析報告。</p>
+<blockquote>
+<p><strong>主要發現。</strong> 2023 年，校長將學業成功重視程度評為「非常高」的學校，其學生數學平均為 <strong>625.9 分</strong>，評為「中」的學校為 <strong>594.0 分</strong>。未調整差距 <strong>31.9 分</strong>（95% CI 20.6 至 43.2）。控制性別與家庭學習資源後，關聯仍為 <strong>21.1 分</strong>（95% CI 11.0 至 31.2）。這是學校間的關聯，不能解讀為提高校長評分就會提升成績。</p>
+</blockquote>
+<h2 id="section-1"><span class="section-index">01</span>1. 研究問題與定位</h2>
+<ol>
+<li>TIMSS 2019 至 2023，臺灣四年級數學內容與認知領域成就如何變化？變化是否因性別、家庭學習資源而異？</li>
+<li>**本報告的主分析：**校長報告的學校重視學業成功程度，與學生數學成就是否有關？這個關聯在控制學生性別、家庭學習資源及加入教師報告後是否仍存在？</li>
+</ol>
+<p>TIMSS 2019 與 2023 是不同學生的重複橫斷面；本報告不將兩輪樣本逐人配對，也不估計疫情的因果效果。</p>
+<h2 id="section-2"><span class="section-index">02</span>2. 實際載入的資料與檔名規則</h2>
+<p>TIMSS 四年級檔名可拆為 <code>ASG</code>（資料種類）＋<code>TWN</code>（臺灣）＋<code>M7</code>（2019 主調查）或 <code>M8</code>（2023 主調查）。2019 的 <code>B7</code> 是銜接樣本，<code>Z7</code> 是 eTIMSS 問題解決與探究資料；本次全國學生估計使用 <code>M7</code>。這些規則已對照兩輪 User Guide。<a href="https://timss2019.org/international-database/downloads/TIMSS-2019-User-Guide-for-the-International-Database-2nd-Ed.pdf">[TIMSS 2019 手冊]</a> <a href="https://www.iea.nl/sites/default/files/2025-02/T23_UG-International-Database.pdf">[TIMSS 2023 手冊]</a></p>
+<p>下表是<strong>實際載入</strong>各臺灣主檔得到的列數。<code>AST</code> 一位學生可有多列，<code>ASR</code> 是評分一致性子樣本，兩者的列數不能當作學生人數。</p>
+<table>
+<thead>
+<tr>
+<th>代碼</th>
+<th>資料檔用途</th>
+<th>TIMSS 2019 列</th>
+<th>TIMSS 2023 列</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ACG</td>
+<td>校長／學校問卷</td>
+<td>162</td>
+<td>215</td>
+</tr>
+<tr>
+<td>ASA</td>
+<td>學生逐題作答與成就</td>
+<td>3765</td>
+<td>5308</td>
+</tr>
+<tr>
+<td>ASG</td>
+<td>學生問卷與成就可能值</td>
+<td>3765</td>
+<td>5308</td>
+</tr>
+<tr>
+<td>ASH</td>
+<td>家長／家庭問卷</td>
+<td>3765</td>
+<td>5308</td>
+</tr>
+<tr>
+<td>ASR</td>
+<td>評分者一致性資料</td>
+<td>3276</td>
+<td>4673</td>
+</tr>
+<tr>
+<td>AST</td>
+<td>學生—教師連結</td>
+<td>7538</td>
+<td>10646</td>
+</tr>
+<tr>
+<td>ATG</td>
+<td>教師問卷</td>
+<td>393</td>
+<td>515</td>
+</tr>
+<tr>
+<td>ASP</td>
+<td>數位作答歷程</td>
+<td>—</td>
+<td>5308</td>
+</tr>
+</tbody></table>
+<p>本研究實際使用的主檔為 <code>asgtwnm7.sav</code>、<code>asgtwnm8.sav</code>；家庭檔 <code>ASH</code>、校長檔 <code>ACG</code>、教師檔 <code>ATG</code>、學生教師連結檔 <code>AST</code> 用於跨檔案分析。<code>ASA</code> 為逐題分析資料，這次成就量尺分析無須把逐題反應當成個人成績。</p>
+<h3 id="section-8-1">變項對照 codebook</h3>
+<table>
+<thead>
+<tr>
+<th>變項</th>
+<th>檔案</th>
+<th>實際意義與編碼</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>IDCNTRY</code>, <code>IDSCHOOL</code>, <code>IDSTUD</code></td>
+<td>ASG／ASH／ACG</td>
+<td>國別、學校、學生識別碼</td>
+<td>學生—家庭、學生—校長連結</td>
+</tr>
+<tr>
+<td><code>IDTEALIN</code>, <code>IDSUBJ</code></td>
+<td>AST／ATG</td>
+<td>教師班級連結碼；1 數學、2 科學、3 兩科</td>
+<td>篩選數學教師並連結教師問卷</td>
+</tr>
+<tr>
+<td><code>ASMMAT01</code>–<code>05</code></td>
+<td>TIMSS ASG／AST</td>
+<td>數學整體成就的五個可能值</td>
+<td>結果變項</td>
+</tr>
+<tr>
+<td><code>ASMNUM</code>, <code>ASMGEO</code>, <code>ASMDAT</code>；<code>ASMKNO</code>, <code>ASMAPP</code>, <code>ASMREA</code> 各 01–05</td>
+<td>TIMSS ASG</td>
+<td>內容及認知領域可能值</td>
+<td>領域變化</td>
+</tr>
+<tr>
+<td><code>ACBGEAS</code>／<code>ACDGEAS</code></td>
+<td>TIMSS ACG</td>
+<td>校長學業成功重視量尺／三類指標：1 非常高、2 高、3 中</td>
+<td>主要解釋變項</td>
+</tr>
+<tr>
+<td><code>ATBGEAS</code>／<code>ATDGEAS</code></td>
+<td>TIMSS ATG</td>
+<td>教師對同一校園氣氛的量尺／三類指標</td>
+<td>跨教師檔敏感度模型</td>
+</tr>
+<tr>
+<td><code>ASBG01</code></td>
+<td>TIMSS ASG</td>
+<td>1 女、2 男；其他或無效值不納入二元性別比較</td>
+<td>調整變項</td>
+</tr>
+<tr>
+<td><code>ASDGHRL</code></td>
+<td>TIMSS ASG</td>
+<td>1 多、2 一些、3 少家庭學習資源</td>
+<td>調整變項</td>
+</tr>
+<tr>
+<td><code>TOTWGT</code>, <code>MATWGT</code>, <code>JKZONE</code>, <code>JKREP</code></td>
+<td>ASG／AST</td>
+<td>學生權重、數學教師連結權重、jackknife 分層與重複碼</td>
+<td>設計型推論</td>
+</tr>
+</tbody></table>
+<h2 id="section-3"><span class="section-index">03</span>3. 官方統計方法與重現關卡</h2>
+<p>依官方使用手冊與技術說明，學生層級估計以 <code>TOTWGT</code> 加權；與教師連結的數學分析以 <code>MATWGT</code> 加權。成就估計對五個可能值各算一次，再平均估計量；抽樣變異用 <code>JKZONE</code>／<code>JKREP</code> 建立刪半加倍的 jackknife 重複權重，並加上可能值間的測量變異。總變異為五次抽樣變異的平均，加上 <code>1 + 1/5</code> 倍的五次估計量樣本變異。這套做法同時用於平均、組間差與迴歸係數，而非直接對個人可能值取平均後做一般統計。<a href="https://www.iea.nl/sites/default/files/2025-02/T23_UG-International-Database.pdf">[TIMSS 2023 使用手冊]</a> <a href="https://www.iea.nl/publications/technical-reports/timss-2023-technical-report">[TIMSS 2023 技術報告]</a></p>
+<p>**先重現、再分析：**以下八個臺灣官方成就平均與標準誤在官方精度下全部吻合。括號內為標準誤；兩輪內容領域數字對照官方領域表。</p>
+<table>
+<thead>
+<tr>
+<th>資料</th>
+<th>量尺</th>
+<th>本研究估計（SE）</th>
+<th>官方公布（SE）</th>
+<th>核對</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TIMSS 2019</td>
+<td>數學總分</td>
+<td>599.2（1.9）</td>
+<td>599（1.9）</td>
+<td>吻合</td>
+</tr>
+<tr>
+<td>TIMSS 2019</td>
+<td>數</td>
+<td>599.4（1.7）</td>
+<td>599（1.7）</td>
+<td>吻合</td>
+</tr>
+<tr>
+<td>TIMSS 2019</td>
+<td>測量與幾何</td>
+<td>607.5（1.8）</td>
+<td>607（1.8）</td>
+<td>吻合</td>
+</tr>
+<tr>
+<td>TIMSS 2019</td>
+<td>資料</td>
+<td>590.0（2.4）</td>
+<td>590（2.4）</td>
+<td>吻合</td>
+</tr>
+<tr>
+<td>TIMSS 2023</td>
+<td>數學總分</td>
+<td>607.0（1.7）</td>
+<td>607（1.7）</td>
+<td>吻合</td>
+</tr>
+<tr>
+<td>TIMSS 2023</td>
+<td>數</td>
+<td>601.6（1.6）</td>
+<td>602（1.6）</td>
+<td>吻合</td>
+</tr>
+<tr>
+<td>TIMSS 2023</td>
+<td>測量與幾何</td>
+<td>621.7（1.8）</td>
+<td>622（1.8）</td>
+<td>吻合</td>
+</tr>
+<tr>
+<td>TIMSS 2023</td>
+<td>資料</td>
+<td>601.0（2.0）</td>
+<td>601（2.0）</td>
+<td>吻合</td>
+</tr>
+</tbody></table>
+<p>另以官方分組表核對 TIMSS 2019 校長分類的臺灣學生比例 <strong>9%／73%／18%</strong>、數學平均 <strong>609／601／588</strong>，均在官方公布精度下吻合。這是分組比例與平均的核對，<strong>不宣稱分組標準誤逐一完全相同</strong>。<a href="https://timss2019.org/reports/wp-content/uploads/download/home-school/7_1-5_school-emphasis-success-MS48.pdf">[TIMSS 2019 Exhibit 7.2]</a></p>
+<h2 id="section-4"><span class="section-index">04</span>4. 跨檔案連結與分析樣本</h2>
+<p>學生 <code>ASG</code> 與家庭 <code>ASH</code> 以國別和學生 ID 連結；校長 <code>ACG</code> 以國別和學校 ID 一對多連到學生；教師 <code>ATG</code> 須先透過 <code>AST</code>，依 <code>IDTEALIN</code> 連接且只留數學教師。部分學生有兩位數學教師，<code>MATWGT</code> 會把其學生權重分配到教師連結列；實際核對每位學生的數學教師連結權重加總與 <code>TOTWGT</code> 相同。教師不構成全國教師的代表性樣本，教師模型仍以學生為分析單位。</p>
+<table>
+<thead>
+<tr>
+<th>年度</th>
+<th>學生</th>
+<th>學校</th>
+<th>有效校長學校</th>
+<th>校長分析學生</th>
+<th>調整模型學生</th>
+<th>數學師生連結列</th>
+<th>教師模型獨立學生</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2019</td>
+<td>3765</td>
+<td>162</td>
+<td>161</td>
+<td>3742</td>
+<td>3708</td>
+<td>3789</td>
+<td>3685</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>5308</td>
+<td>215</td>
+<td>212</td>
+<td>5243</td>
+<td>5131</td>
+<td>5344</td>
+<td>5091</td>
+</tr>
+</tbody></table>
+<p>2019／2023 各有 <strong>23／65 位</strong>學生因校長分類缺漏未進入校長主分析；再排除性別與家庭資源無效／缺漏值後，調整模型分別使用 <strong>3,708／5,131 位</strong>學生。所有學生均有對應家庭檔記錄。教師模型僅使用教師量尺有效且數學教師可連結的資料。</p>
+<h2 id="section-5"><span class="section-index">05</span>5. TIMSS 數學領域變化與性別、家庭資源背景</h2>
+<p>下表使用全部臺灣學生，兩輪獨立樣本的變異相加估計跨年差的 95% 信賴區間。不同領域的量尺代表不同構念，宜比較<strong>同一領域跨年的變化</strong>，不要把單一年份領域分數高低視為能力難度排序。</p>
+<table>
+<thead>
+<tr>
+<th>量尺</th>
+<th>2019</th>
+<th>2023</th>
+<th>變化</th>
+<th>95% CI</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>整體數學</td>
+<td>599.2</td>
+<td>607.0</td>
+<td>+7.8</td>
+<td>2.7 至 12.9</td>
+</tr>
+<tr>
+<td>數</td>
+<td>599.4</td>
+<td>601.6</td>
+<td>+2.2</td>
+<td>-2.4 至 6.8</td>
+</tr>
+<tr>
+<td>測量與幾何</td>
+<td>607.5</td>
+<td>621.7</td>
+<td>+14.2</td>
+<td>9.2 至 19.2</td>
+</tr>
+<tr>
+<td>資料</td>
+<td>590.0</td>
+<td>601.0</td>
+<td>+11.0</td>
+<td>4.9 至 17.1</td>
+</tr>
+<tr>
+<td>知道</td>
+<td>621.6</td>
+<td>618.7</td>
+<td>-2.8</td>
+<td>-7.8 至 2.1</td>
+</tr>
+<tr>
+<td>應用</td>
+<td>600.2</td>
+<td>611.7</td>
+<td>+11.5</td>
+<td>6.8 至 16.2</td>
+</tr>
+<tr>
+<td>推理</td>
+<td>576.1</td>
+<td>588.8</td>
+<td>+12.7</td>
+<td>7.6 至 17.7</td>
+</tr>
+</tbody></table>
+<p>整體上升 <strong>7.8 分</strong>；「測量與幾何」「資料」「應用」「推理」上升較明確，「數」與「知道」的跨年差信賴區間含零。因此學習支持可先檢視<strong>數的概念及基礎知識</strong>是否有特定單元或群體需求，再用題目與課程資料細查，不能僅憑量尺平均直接指定教學處方。性別方面，整體增幅的女生減男生差為 <strong>−3.5 分</strong>（95% CI −10.3 至 3.4），尚無清楚的增幅差；家庭資源「少」相對「多」在推理領域增幅差為 <strong>+37.6 分</strong>（95% CI 9.0 至 66.2），屬多項探索比較，且低資源組人數少，須謹慎解讀。</p>
+<h2 id="section-6"><span class="section-index">06</span>6. 校長重視學業成功與數學成就：主要分析</h2>
+<h3 id="section-8-2">6.1 加權描述統計</h3>
+<p>比例以<strong>學生</strong>為分母，表示有多少臺灣四年級學生就讀於相應校長分類的學校，不是全國學校所占比例。平均、標準誤及區間均依五個可能值與 jackknife 估計。</p>
+<table>
+<thead>
+<tr>
+<th>年度</th>
+<th>校長分類</th>
+<th>學生加權比例</th>
+<th>數學平均</th>
+<th>SE</th>
+<th>95% CI</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2019</td>
+<td>非常高</td>
+<td>9.3%</td>
+<td>609.0</td>
+<td>7.2</td>
+<td>594.9 至 623.0</td>
+</tr>
+<tr>
+<td>2019</td>
+<td>高</td>
+<td>72.9%</td>
+<td>600.8</td>
+<td>2.0</td>
+<td>596.8 至 604.8</td>
+</tr>
+<tr>
+<td>2019</td>
+<td>中</td>
+<td>17.9%</td>
+<td>588.1</td>
+<td>5.1</td>
+<td>578.0 至 598.2</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>非常高</td>
+<td>14.8%</td>
+<td>625.9</td>
+<td>3.8</td>
+<td>618.5 至 633.4</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>高</td>
+<td>70.4%</td>
+<td>605.7</td>
+<td>2.1</td>
+<td>601.6 至 609.8</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>中</td>
+<td>14.8%</td>
+<td>594.0</td>
+<td>4.4</td>
+<td>585.4 至 602.6</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>年度</th>
+<th>組間差</th>
+<th>分數差</th>
+<th>95% CI</th>
+<th>近似 p</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2019</td>
+<td>非常高 − 中</td>
+<td>+20.9</td>
+<td>5.5 至 36.2</td>
+<td>0.008</td>
+</tr>
+<tr>
+<td>2019</td>
+<td>高 − 中</td>
+<td>+12.7</td>
+<td>1.8 至 23.6</td>
+<td>0.022</td>
+</tr>
+<tr>
+<td>2019</td>
+<td>非常高 − 高</td>
+<td>+8.2</td>
+<td>-6.1 至 22.5</td>
+<td>0.262</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>非常高 − 中</td>
+<td>+31.9</td>
+<td>20.6 至 43.2</td>
+<td>&lt;0.001</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>高 − 中</td>
+<td>+11.7</td>
+<td>1.7 至 21.7</td>
+<td>0.022</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>非常高 − 高</td>
+<td>+20.2</td>
+<td>12.1 至 28.4</td>
+<td>&lt;0.001</td>
+</tr>
+</tbody></table>
+<p>兩輪均呈「非常高 &gt; 高 &gt; 中」的描述性梯度。2019 年「非常高 − 中」為 <strong>20.9 分</strong>；2023 年為 <strong>31.9 分</strong>。2023 年差距的點估計較大，但差距是否真的比 2019 年擴大，不能只比較兩個點估計或各自顯著性。</p>
+<h3 id="section-8-3">6.2 調整性別與家庭學習資源</h3>
+<p>加權線性模型以「校長評為中」、「男生」及「家庭資源多」為參照；每個可能值分別估計迴歸係數，再合併 jackknife 與測量變異。下表僅列出研究問題的主要係數。</p>
+<table>
+<thead>
+<tr>
+<th>年度</th>
+<th>校長分類相對「中」</th>
+<th>調整後分數差</th>
+<th>95% CI</th>
+<th>近似 p</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2019</td>
+<td>非常高 vs. 中</td>
+<td>+12.1</td>
+<td>1.3 至 23.0</td>
+<td>0.029</td>
+</tr>
+<tr>
+<td>2019</td>
+<td>高 vs. 中</td>
+<td>+9.0</td>
+<td>0.3 至 17.8</td>
+<td>0.044</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>非常高 vs. 中</td>
+<td>+21.1</td>
+<td>11.0 至 31.2</td>
+<td>&lt;0.001</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>高 vs. 中</td>
+<td>+6.8</td>
+<td>-2.5 至 16.0</td>
+<td>0.151</td>
+</tr>
+</tbody></table>
+<p>控制性別與家庭資源後，2019 年「非常高」相對「中」為 <strong>12.1 分</strong>（95% CI 1.3 至 23.0）；2023 年為 <strong>21.1 分</strong>（95% CI 11.0 至 31.2）。兩年係數差為 <strong>+9.0 分</strong>（近似 95% CI -5.8 至 23.8），區間含零，沒有足夠證據認定此關聯在兩年間改變。家庭資源與成績之間的差距在模型中仍很大，表示校長分類不能取代家庭背景的考量。</p>
+<h3 id="section-8-4">6.3 加入數學教師報告的跨檔案敏感度分析</h3>
+<p>教師資料經 <code>AST</code> 連結後，以 <code>MATWGT</code> 估計。模型在上節控制變項外加入教師的 <code>ATBGEAS</code> 量尺；教師量尺以 10 分為中心化，係數表示量尺每增加 1 分的關聯。教師與校長回答的是相近構念，加入教師變項可能吸收共同訊息，因此此模型是<strong>敏感度分析</strong>，不是判定校長與教師各自因果貢獻。</p>
+<table>
+<thead>
+<tr>
+<th>年度</th>
+<th>模型係數</th>
+<th>分數差</th>
+<th>95% CI</th>
+<th>近似 p</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2019</td>
+<td>校長：非常高 vs. 中</td>
+<td>+9.1</td>
+<td>-1.8 至 20.0</td>
+<td>0.101</td>
+</tr>
+<tr>
+<td>2019</td>
+<td>校長：高 vs. 中</td>
+<td>+7.3</td>
+<td>-1.8 至 16.3</td>
+<td>0.118</td>
+</tr>
+<tr>
+<td>2019</td>
+<td>教師量尺：每增加 1 分</td>
+<td>+2.1</td>
+<td>-0.4 至 4.6</td>
+<td>0.104</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>校長：非常高 vs. 中</td>
+<td>+17.3</td>
+<td>6.7 至 27.8</td>
+<td>0.001</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>校長：高 vs. 中</td>
+<td>+3.7</td>
+<td>-5.6 至 12.9</td>
+<td>0.435</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>教師量尺：每增加 1 分</td>
+<td>+2.2</td>
+<td>0.7 至 3.8</td>
+<td>0.005</td>
+</tr>
+</tbody></table>
+<p>在教師模型中，2023 年校長「非常高」相對「中」仍為 <strong>17.3 分</strong>（95% CI 6.7 至 27.8）；2019 年估計 <strong>9.1 分</strong>，區間含零。兩年模型樣本略有不同，係數變動不宜全歸因於加入教師變項。</p>
+<h2 id="section-7"><span class="section-index">07</span>7. 學習支持優先方向與研究限制</h2>
+<p><strong>可據以安排後續檢查的方向：</strong>（1）細看「數」與「知道」的題目、教材與課程對應，確認哪些知識點沒有同步改善；（2）就讀校長評為「中」的學校之學生平均較低，可優先檢視其學校支持條件，但不能用校長評分直接標記個別學校或學生；（3）在家庭學習資源較少群體，檢視數學應用、推理題的題目特徵與作答差異。</p>
+<p>**限制：**校長與教師量尺皆為主觀報告；高成就學校也可能讓受訪者給出較高評價，存在反向因果。學生在學校內群聚，已用 TIMSS 設計的 jackknife 反映抽樣不確定性，但模型仍可能遺漏學校社經組成、先前成就、師資與課程等共同因素。2019 年校長「非常高」僅 <strong>15 所學校</strong>，估計較不精確。完整案例排除可能造成選擇差異；多項領域與組別比較屬探索性，未做家族錯誤率調整。跨年量尺、問卷與抽樣的差異也限制了對趨勢成因的解讀。兩輪分數差距代表群體變化，不能視為個人成長。</p>
+<h2 id="section-8"><span class="section-index">08</span>8. 可重現檔案與來源</h2>
+<ul>
+<li><code>official_timss_reproduction_gate.R</code>、<code>official_timss_reproduction_gate.csv</code>：八個臺灣官方平均及 SE 的重現關卡。</li>
+<li><code>analyze_timss_principal_emphasis.R</code>：跨檔連結、五個可能值、權重與 jackknife 模型。</li>
+<li><code>timss_principal_output/</code>：樣本流程、描述統計、模型、領域變化及檔案盤點 CSV。</li>
+<li><code>T23_Codebook_G4.xlsx</code>、<code>TIMSS2019/T19_G4_Codebooks/T19_G4_Codebook.xlsx</code>：變項定義。</li>
+<li><a href="https://timss2019.org/international-database/downloads/TIMSS-2019-User-Guide-for-the-International-Database-2nd-Ed.pdf">TIMSS 2019 User Guide</a>、<a href="https://www.iea.nl/sites/default/files/2025-02/T23_UG-International-Database.pdf">TIMSS 2023 User Guide</a>、<a href="https://timss2019.org/reports/">TIMSS 2019 國際結果</a>、<a href="https://www.iea.nl/publications/technical-reports/timss-2023-technical-report">TIMSS 2023 技術報告</a>。</li>
+</ul>
+<div class="footer">資料與方法可重現 · 本報告不作個人層級配對或因果推論</div></main></div></body></html>
