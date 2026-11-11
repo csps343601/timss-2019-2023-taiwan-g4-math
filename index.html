@@ -10,7 +10,7 @@ a{color:var(--blue);text-underline-offset:3px}a:hover{color:var(--orange)}a:focu
 .mast strong{font-size:.83rem;letter-spacing:.18em;font-weight:700}.mast small{font-size:.82rem;color:#a9cbd4;text-align:right}
 .layout{max-width:1480px;margin:auto;display:grid;grid-template-columns:240px minmax(0,1fr);gap:4.7vw;padding:0 3.5vw}
 .toc{position:sticky;top:0;align-self:start;height:100vh;overflow:auto;padding:2.2rem 0}.toc .kicker{font-size:.7rem;letter-spacing:.19em;color:var(--orange);font-weight:800;margin-bottom:1rem}.toc a{display:flex;gap:.75rem;align-items:baseline;text-decoration:none;color:var(--soft);padding:.52rem 0;border-bottom:1px solid var(--line);font-size:.85rem;line-height:1.45}.toc a:hover{color:var(--blue)}.toc span{font-family:Consolas,monospace;color:var(--blue);font-size:.7rem}
-main{min-width:0;background:var(--white);box-shadow:0 0 0 1px var(--line);padding:3.6rem clamp(1.4rem,5vw,5.4rem) 6rem;margin:1.8rem 0 5rem}
+.downloads{margin:0 0 1.5rem}.downloads a{display:inline-block;padding:.5rem .8rem;border:1px solid var(--blue);border-radius:4px;text-decoration:none;font-weight:700;font-size:.84rem}.downloads a:hover{background:var(--blue);color:white}main{min-width:0;background:var(--white);box-shadow:0 0 0 1px var(--line);padding:3.6rem clamp(1.4rem,5vw,5.4rem) 6rem;margin:1.8rem 0 5rem}
 h1{font-size:clamp(2rem,4vw,3.6rem);letter-spacing:-.05em;line-height:1.2;margin:0 0 .9rem;font-weight:800;max-width:20ch}h1:before{content:"RESEARCH NOTE / 2026";display:block;color:var(--blue);font-family:Consolas,monospace;font-size:.76rem;letter-spacing:.18em;margin-bottom:1.4rem;font-weight:700}
 .subtitle{font-size:1.15rem;color:var(--soft);margin:0 0 1.6rem;letter-spacing:0;font-weight:600}
 main>p:first-of-type{font-size:.9rem;color:var(--soft);border-top:1px solid var(--line);padding-top:1.1rem}
@@ -31,7 +31,7 @@ code{font: .86em Consolas,"Courier New",monospace;color:#a84327;background:#f8ed
 <a href="#section-5"><span>05</span>5. TIMSS 數學領域變化與性別、家庭資源背景</a>
 <a href="#section-6"><span>06</span>6. 校長重視學業成功與數學成就：主要分析</a>
 <a href="#section-7"><span>07</span>7. 學習支持優先方向與研究限制</a>
-<a href="#section-8"><span>08</span>8. 可重現檔案與來源</a></nav><main><h1 id="timss-2019-2023">TIMSS 2019 至 2023 臺灣國小四年級數學領域成就變化與學習支持優先方向</h1>
+<a href="#section-8"><span>08</span>8. 可重現檔案與來源</a></nav><main><div class="downloads"><a href="TIMSS2019_2023_校長學業成功重視與數學成就_研究報告.md" download>下載 Markdown 研究報告</a></div><h1 id="timss-2019-2023">TIMSS 2019 至 2023 臺灣國小四年級數學領域成就變化與學習支持優先方向</h1>
 <p class="subtitle">性別及家庭學習資源之比較；校長報告的學校重視學業成功程度與數學成就之關聯</p>
 <p><strong>資料版本與範圍：</strong>TIMSS 2019、TIMSS 2023 臺灣四年級。整理日期：2026-11-11。這是一份次級資料的描述性與關聯性分析報告；成就估計於 2026-11-10 重新執行，問卷對照於 2026-11-11 完成。</p>
 <blockquote>
@@ -175,7 +175,7 @@ code{font: .86em Consolas,"Courier New",monospace;color:#a84327;background:#f8ed
 </tbody>
 </table>
 <h3 id="section-3">正式問卷與臺灣版修訂核對</h3>
-<p>已逐題對照 2019 正式問卷與臺灣修訂附錄、2023 四年級正式問卷與臺灣修訂表，以及兩輪 codebook。題目對照摘要如下表。</p>
+<p>已逐題對照 2019 正式問卷與臺灣修訂附錄、2023 四年級正式問卷與臺灣修訂表，以及兩輪 codebook。題目對照摘要如下表；<a href="TIMSS_2019_2023_%E8%87%BA%E7%81%A3%E5%9B%9B%E5%B9%B4%E7%B4%9A%E5%95%8F%E5%8D%B7%E5%85%A7%E5%AE%B9%E5%B0%8D%E7%85%A7.md">完整問卷內容對照</a>另列於 Markdown。</p>
 <table>
 <thead>
 <tr>
@@ -621,7 +621,7 @@ code{font: .86em Consolas,"Courier New",monospace;color:#a84327;background:#f8ed
 <p>在教師模型中，2023 年校長「非常高」相對「中」仍為 <strong>17.3 分</strong>（95% CI 6.7 至 27.8）；2019 年估計 <strong>9.1 分</strong>，區間含零。兩年模型樣本略有不同，係數變動不宜全歸因於加入教師變項。</p>
 <h3 id="section-10">6.4 校長分類內的家庭資源與領域變化</h3>
 <p>延伸分析限制在校長分類、家庭資源及五種成就量尺皆有效的學生（2019 年 3,708 人；2023 年 5,131 人），同樣使用五個可能值、<code>TOTWGT</code> 和 jackknife。校長評為「中」的學校，其學生家庭資源「少」的加權比例為 2019 年 <strong>8.5%</strong>、2023 年 <strong>3.3%</strong>；「非常高」組為 <strong>2.7%</strong>、<strong>0.4%</strong>。這是不同年度學生與學校的組成，且 2023「非常高×資源少」交叉格很稀疏，不能解讀為同校資源改善或估計該格的成績。</p>
-<p>在三個校長分類內，「數」與「知道」的跨年變化之 95% 信賴區間均含零。例如「高」組的「數」變化為 <strong>−0.2 分</strong>（95% CI −5.4 至 5.0），「知道」為 <strong>−4.2 分</strong>（95% CI −10.1 至 1.7）；「應用」與「推理」則分別上升 <strong>9.4</strong>、<strong>10.2 分</strong>。這些分組比較屬探索性，詳見本節分組結果與估計限制。</p>
+<p>在三個校長分類內，「數」與「知道」的跨年變化之 95% 信賴區間均含零。例如「高」組的「數」變化為 <strong>−0.2 分</strong>（95% CI −5.4 至 5.0），「知道」為 <strong>−4.2 分</strong>（95% CI −10.1 至 1.7）；「應用」與「推理」則分別上升 <strong>9.4</strong>、<strong>10.2 分</strong>。這些分組比較屬探索性，詳見<a href="TIMSS_%E6%A0%A1%E9%95%B7%E5%88%86%E9%A1%9E%E8%88%87%E5%AD%B8%E7%BF%92%E6%94%AF%E6%8C%81_%E8%A3%9C%E5%85%85%E5%88%86%E6%9E%90.md">補充分析</a>與本節估計限制。</p>
 <h2 id="section-7"><span class="section-index">07</span>7. 學習支持優先方向與研究限制</h2>
 <p><strong>可據以安排後續檢查的方向：</strong>（1）細看「數」與「知道」的題目、教材與課程對應，確認哪些知識點沒有同步改善；（2）就讀校長評為「中」的學校之學生平均較低，可優先檢視其學校支持條件，但不能用校長評分直接標記個別學校或學生；（3）在家庭學習資源較少群體，檢視數學應用、推理題的題目特徵與作答差異。</p>
 <p><strong>限制：</strong>校長與教師量尺皆為主觀報告；高成就學校也可能讓受訪者給出較高評價，存在反向因果。學生在學校內群聚，已用 TIMSS 設計的 jackknife 反映抽樣不確定性，但模型仍可能遺漏學校社經組成、先前成就、師資與課程等共同因素。2019 年校長「非常高」僅 <strong>15 所學校</strong>，估計較不精確。完整案例排除可能造成選擇差異；多項領域與組別比較屬探索性，未做家族錯誤率調整。校長與教師原題內容大致對應，但衍生指標的跨年測量等值未在本研究另行驗證；家庭物品題及臺灣自訂選項有改動，家庭資源比例變化需謹慎解讀。兩輪分數差距代表群體變化，不能視為個人成長。</p>
@@ -631,7 +631,7 @@ code{font: .86em Consolas,"Courier New",monospace;color:#a84327;background:#f8ed
 <li><code>analyze_timss_principal_emphasis.R</code>：跨檔連結、五個可能值、權重與 jackknife 模型。</li>
 <li><code>timss_principal_output/</code>：樣本流程、描述統計、模型、領域變化及檔案盤點 CSV。</li>
 <li><code>T23_Codebook_G4.xlsx</code>、<code>TIMSS2019/T19_G4_Codebooks/T19_G4_Codebook.xlsx</code>：變項定義。</li>
-<li><code>TIMSS2023_Docs/</code>、<code>T19_UG_Supp1-international-context-questionnaires.pdf</code>、<code>T19_UG_Supp2-national-adaptations-database.pdf</code>：正式問卷、臺灣修訂與變項對照；對照摘要見本報告第 3 節。</li>
+<li><code>TIMSS2023_Docs/</code>、<code>T19_UG_Supp1-international-context-questionnaires.pdf</code>、<code>T19_UG_Supp2-national-adaptations-database.pdf</code>：正式問卷、臺灣修訂與變項對照；對照摘要見本報告第 3 節，完整內容見<a href="TIMSS_2019_2023_%E8%87%BA%E7%81%A3%E5%9B%9B%E5%B9%B4%E7%B4%9A%E5%95%8F%E5%8D%B7%E5%85%A7%E5%AE%B9%E5%B0%8D%E7%85%A7.md">問卷內容對照</a>。</li>
 <li><code>followup_principal_support.R</code>、<code>followup_principal_support_estimates.csv</code>、<code>followup_principal_support_changes.csv</code>：校長分類內家庭資源與領域的延伸分析。</li>
 <li><a href="https://timss2019.org/international-database/downloads/TIMSS-2019-User-Guide-for-the-International-Database-2nd-Ed.pdf">TIMSS 2019 User Guide</a>、<a href="https://www.iea.nl/sites/default/files/2025-02/T23_UG-International-Database.pdf">TIMSS 2023 User Guide</a>、<a href="https://timss2019.org/reports/">TIMSS 2019 國際結果</a>、<a href="https://www.iea.nl/publications/technical-reports/timss-2023-technical-report">TIMSS 2023 技術報告</a>。</li>
 </ul>
